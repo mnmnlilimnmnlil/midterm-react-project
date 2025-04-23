@@ -1,0 +1,108 @@
+/* 전체 영역 */
+.share-page {
+    background-color: #fde2b7;
+    min-height: 100vh; /* 화면 전체를 채우도록 보장 */
+    box-sizing: border-box;
+    padding-top: 40px; /* 헤더와 자연스러운 간격 */
+  }
+  
+  /* 상단 제목 */
+  .share-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1a365d;
+    text-align: center;
+    margin-bottom: 32px; /* 콘텐츠와 제목 사이 간격 */
+    margin-top: 0; /* 상단 마진 제거 */
+  }
+  
+  /* 상품 카드 그리드 */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 24px;
+    max-width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+  }
+  
+  /* 카드 스타일 */
+  .product-card {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  /* 카드 호버 시 */
+  .product-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* 이미지 박스 */
+  .product-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #f7f7f7;
+  }
+  
+  .product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* 상품 정보 텍스트 */
+  .product-info {
+    padding: 16px;
+    font-size: 0.95rem;
+    color: #1a365d;
+  }
+  
+  .product-category {
+    font-size: 0.8rem;
+    color: gray;
+  }
+  
+  .product-name {
+    font-weight: 700;
+    margin: 8px 0;
+  }
+  
+  .product-price {
+    font-weight: bold;
+  }
+  
+  .product-discount {
+    font-size: 0.85rem;
+    color: #444;
+  }
+  
+  .product-rating {
+    font-size: 0.85rem;
+    color: #f27e63;
+    margin-top: 6px;
+  }
+
+  .product-donation {
+    font-size: 0.85rem;
+    color: #333;
+    margin-top: 6px;
+  }
+
+  /* Share.css */
+.product-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .product-link:hover {
+    cursor: pointer;
+  }
+
+  
+  
+  

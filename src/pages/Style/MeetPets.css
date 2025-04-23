@@ -1,0 +1,36 @@
+.meet-pets {
+  background-color: #fde2b7;
+  height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow-y: auto;        /* ✅ 세로 스크롤은 허용 */
+  overflow-x: hidden;      /* ✅ 가로는 감싸기 */
+  padding-bottom: 40px;
+}
+
+.meet-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1a365d;
+  margin: 100px 140px 20px;
+  text-align: center;
+}
+
+.pet-list {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  overflow-x: auto;
+  overflow-y: visible;      /* ✅ 위로 튀는 카드 보여주기 */
+  scroll-behavior: smooth;
+  padding: 30px 100px 0;    /* ✅ 위쪽 패딩 추가로 공간 확보 */
+  box-sizing: border-box;
+  position: relative;       /* ✅ 오버플로우 계산 정확하게 처리 */
+  
+}
+
+
+.pet-list::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,110 @@
+.news-modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.news-modal-layout {
+  width: 90%;
+  max-width: 1100px;
+  height: 80%;
+  display: flex;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top:100px;
+  
+}
+
+.news-left {
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-image {
+  width: 100%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.news-body {
+  padding: 20px;
+  height: 50%;
+  overflow-y: auto;
+  background-color: #fffdf9;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.news-body h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.news-body .date {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.news-content {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.news-comments {
+  flex: 1;
+  padding: 20px;
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.news-comments .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  border: none;
+  background: none;
+  color: #888;
+  cursor: pointer;
+}
+
+.comments-list {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #333;
+}
+
+.comment-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.comment-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.comment-input button {
+  padding: 10px 16px;
+  background: #ff8a65;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

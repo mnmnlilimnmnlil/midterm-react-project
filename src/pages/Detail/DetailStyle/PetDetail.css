@@ -1,0 +1,128 @@
+.pet-detail {
+    background-color: #fde2b7;
+    height: calc(100vh - 90px);
+    padding: 80px 10%;
+    box-sizing: border-box;
+    font-family: 'Pretendard', sans-serif;
+    
+  }
+  
+  .pet-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: stretch;
+    justify-content: center;
+  }
+  
+  /* 이미지 박스 */
+  .pet-img-box {
+    flex: 1 1 45%;
+    max-width: 500px;
+    aspect-ratio: 3 / 4; /* 비율 고정 */
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: #f7f7f7;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+  
+  .pet-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .like-icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .like-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  /* 텍스트 영역 */
+  .pet-info-box {
+    flex: 1 1 45%;
+    padding: 32px 40px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%; /* 높이 채움 */
+  }
+  
+  .pet-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1a365d;
+    margin-bottom: 10px;
+  }
+  
+  .pet-age {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .pet-desc {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #444;
+  }
+  
+  .pet-meta p {
+    
+    padding-bottom:14px;
+    margin: 8px 4;
+    color: #333;
+    font-size: 1.5rem;
+    border-bottom:1px solid #1a365d;
+
+  }
+  .pet-meta p b {
+    color: #1a365d;
+  }
+  
+  /* 버튼 */
+  .btn {
+    width: 240px;         /* 넓게 */
+    height: 60px;         /* 높게 */
+    padding: 16px 32px;   /* 내부 여백 */
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1.2rem;    /* 폰트 크게 */
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .pet-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .btn.dark {
+    background-color: #1a365d;
+    color: white;
+  }
+  
+  .btn.coral {
+    background-color: #f27e63;
+    color: white;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  

@@ -1,3 +1,4 @@
+// src/pages/News.js
 import { useState } from 'react';
 import { news } from '../data/news';
 import NewsModal from '../components/NewsModal';
@@ -10,7 +11,10 @@ function News() {
     <div className="news-page">
       {news.map((item) => (
         <div className="news-card" key={item.id} onClick={() => setSelected(item)}>
-          <img src={`${process.env.PUBLIC_URL}/images/${item.image}`} alt={item.title} />
+          <img
+            src={`${process.env.PUBLIC_URL}/images/${item.image}`}
+            alt={item.title}
+          />
           <div className="news-text">
             <h4>{item.title}</h4>
             <p className="summary">{item.summary}</p>

@@ -10,7 +10,7 @@ function News() {
     <div className="news-page">
       {news.map((item) => (
         <div className="news-card" key={item.id} onClick={() => setSelected(item)}>
-          <img src={item.image} alt={item.title} />
+          <img src={`${process.env.PUBLIC_URL}/images/${item.image}`} alt={item.title} />
           <div className="news-text">
             <h4>{item.title}</h4>
             <p className="summary">{item.summary}</p>

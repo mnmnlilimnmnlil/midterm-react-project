@@ -17,7 +17,7 @@ function Share({ products }) {
             onClick={() => navigate(`/product/${item.id}`)}
           >
             <div className="product-img">
-              <img src={item.image} alt={item.name} />
+              <img src={`${process.env.PUBLIC_URL}/${item.image}`} alt={item.name} />
             </div>
             <div className="product-info">
               <span className="product-category">{item.category}</span>

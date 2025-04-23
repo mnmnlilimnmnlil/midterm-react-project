@@ -13,17 +13,15 @@ function ReelsModal({ reel, onClose }) {
             allowFullScreen
           />
         </div>
-
         <div className="info-section">
           <div className="user-header">
-            <img src={reel.profileImage} alt="user" />
+            <img src={`${process.env.PUBLIC_URL}/${reel.profileImage}`} alt="user" />
             <span>{reel.nickname}</span>
             <button onClick={onClose}>X</button>
           </div>
 
           <div className="comments">
             <p> 댓글 구현 예정 </p>
-            {/* 여기에 댓글 리스트 */}
           </div>
 
           <div className="comment-input">

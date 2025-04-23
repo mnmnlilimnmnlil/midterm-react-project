@@ -11,7 +11,7 @@ function PetCard({ pet, setPets }) {
   };
 
   const toggleLike = (e) => {
-    e.stopPropagation(); // 카드 클릭 이벤트 막기
+    e.stopPropagation();
     const newLiked = !liked;
     setLiked(newLiked);
     setPets((prevPets) =>
@@ -24,9 +24,8 @@ function PetCard({ pet, setPets }) {
   return (
     <div className="pet-card" onClick={goToDetail}>
       <div className="image-wrapper">
-        <img src={pet.image} alt={pet.name} />
+        <img src={`${process.env.PUBLIC_URL}/${pet.image}`} alt={pet.name} />
 
-        {/* 하트 아이콘 */}
         <div
           className={`heart-icon ${liked ? 'active' : ''}`}
           onClick={toggleLike}
@@ -34,7 +33,6 @@ function PetCard({ pet, setPets }) {
           {liked ? '❤️' : '🤍'}
         </div>
 
-        {/* 정보 더보기 버튼 */}
         <div className="overlay-button">
           <button
             onClick={(e) => {

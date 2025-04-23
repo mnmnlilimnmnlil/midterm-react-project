@@ -10,11 +10,10 @@ function ProductDetail({ products }) {
   return (
     <div className="product-detail-page">
       <div className="left">
-        <img src={product.image} alt={product.name} />
+        <img src={`${process.env.PUBLIC_URL}/${product.image}`} alt={product.name} />
       </div>
 
       <div className="right">
-        {/* 메타정보 영역 */}
         <div className="product-meta">
           <span className="badge-category">{product.category}</span>
           <span className="badge-best"># 인기상품</span>
@@ -24,19 +23,16 @@ function ProductDetail({ products }) {
         <p className="product-price-range">{product.price.toLocaleString()} 원</p>
         <p className="product-rating">⭐ {product.rating}</p>
 
-        {/* 간단한 상품 설명 */}
         <p className="product-desc">
           {product.name}는 사랑스러운 반려동물을 위한 따뜻한 {product.category}입니다. <br />
           보호소 친구들에게도 같은 따뜻함을 전할 수 있어요.
         </p>
 
-        {/* 배송 및 기부 안내 */}
         <div className="shipping">
           <p><strong>📦 배송안내:</strong> 평일 기준 1~3일 이내 도착 / 무료배송</p>
           <p><strong>💝 기부혜택:</strong> 구매 시 보호소 아이들에게 {product.donation}</p>
         </div>
 
-        {/* 옵션 선택 */}
         <div className="options">
           <div>
             <span>동물 종류</span>
@@ -59,7 +55,6 @@ function ProductDetail({ products }) {
           </div>
         </div>
 
-        {/* 구매 액션 */}
         <div className="actions">
           <button className="buy-now">구매 하러 가기</button>
           <button className="add-to-cart">장바구니 담기</button>

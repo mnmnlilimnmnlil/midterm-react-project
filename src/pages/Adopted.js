@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import PetCard from '../components/PetCard';
-import './Style/MeetPets.css'; // 스타일 공유
+import './Style/MeetPets.css';
 
 function Adopted({ pets, setPets }) {
   const scrollRef = useRef();

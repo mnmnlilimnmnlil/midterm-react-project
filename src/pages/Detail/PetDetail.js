@@ -2,8 +2,6 @@ import { useParams } from 'react-router-dom';
 import './DetailStyle/PetDetail.css'; 
 
 function PetDetail({ pets, setPets }) {
-
-    
   const { id } = useParams();
   const pet = pets.find((p) => p.id === Number(id));
 
@@ -20,7 +18,7 @@ function PetDetail({ pets, setPets }) {
     <div className="pet-detail">
       <div className="pet-container">
         <div className="pet-img-box">
-          <img src={pet.image} alt={pet.name} />
+          <img src={`${process.env.PUBLIC_URL}/${pet.image}`} alt={pet.name} />
           <div className="like-icon" onClick={toggleLike}>
             {pet.liked ? '❤️' : '🤍'}
           </div>

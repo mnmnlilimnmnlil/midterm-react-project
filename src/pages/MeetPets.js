@@ -7,7 +7,6 @@ function MeetPets({ pets, setPets }) {
 
   useEffect(() => {
     const handleWheel = (e) => {
-      
       e.preventDefault();
       scrollRef.current.scrollLeft += e.deltaY;
     };

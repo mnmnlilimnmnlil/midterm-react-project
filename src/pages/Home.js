@@ -4,10 +4,10 @@ function Home() {
   return (
     <div className="home">
       {/* 헤더보다 위로 올라갈 발바닥 이미지 */}
-      <img src="/images/paw-topright.png" alt="발바닥" className="top-paw" />
+      <img src="images/paw-topright.png" alt="발바닥" className="top-paw" />
 
       {/* 파란색 강아지 gif */}
-      <img src="/images/dog01.gif" alt="강아지" className="main-dog" />
+      <img src="images/dog01.gif" alt="강아지" className="main-dog" />
 
       {/* 메인 텍스트와 버튼 */}
       <div className="home-content">

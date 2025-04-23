@@ -17,16 +17,16 @@ function App() {
   const names = ['두부', '콩이', '꼬미', '보리', '탄이', '미미', '댕댕이', '루비', '복실이', '백설이'];
   const ages = ['1살', '2살', '3살', '1살', '4살', '5살', '2살', '3살', '6살', '1살'];
   const images = [
-    '/images/dog1.jpg',
-    '/images/dog2.jpg',
-    '/images/dog3.jpg',
-    '/images/dog4.jpg',
-    '/images/dog5.jpg',
-    '/images/dog6.jpg',
-    '/images/dog7.jpg',
-    '/images/dog8.jpg',
-    '/images/dog9.jpg',
-    '/images/dog10.jpg',
+    'images/dog1.jpg',
+    'images/dog2.jpg',
+    'images/dog3.jpg',
+    'images/dog4.jpg',
+    'images/dog5.jpg',
+    'images/dog6.jpg',
+    'images/dog7.jpg',
+    'images/dog8.jpg',
+    'images/dog9.jpg',
+    'images/dog10.jpg',
   ];
 
   const [pets, setPets] = useState(

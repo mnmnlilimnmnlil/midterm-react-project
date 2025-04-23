@@ -6,7 +6,7 @@ function Header() {
     <header className="header">
       <div className="header-inner">
         <div className="logo-area">
-        <Link to="/"><img src="/images/logo.png" alt="잇다 로고" className="logo-img" /></Link>
+        <Link to="/"><img src="images/logo.png" alt="잇다 로고" className="logo-img" /></Link>
         </div>
         <nav className="menu">
           <Link to="/pets">아이들 만나기</Link>

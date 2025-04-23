@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/midterm-react-project/static/css/main.42f1f500.css",
+    "main.js": "/midterm-react-project/static/js/main.4aff74c1.js",
+    "static/js/453.2a0c951e.chunk.js": "/midterm-react-project/static/js/453.2a0c951e.chunk.js",
+    "static/media/home-bg.png": "/midterm-react-project/static/media/home-bg.4b7386171427cfea89f2.png",
+    "index.html": "/midterm-react-project/index.html",
+    "main.42f1f500.css.map": "/midterm-react-project/static/css/main.42f1f500.css.map",
+    "main.4aff74c1.js.map": "/midterm-react-project/static/js/main.4aff74c1.js.map",
+    "453.2a0c951e.chunk.js.map": "/midterm-react-project/static/js/453.2a0c951e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42f1f500.css",
+    "static/js/main.4aff74c1.js"
+  ]
+}

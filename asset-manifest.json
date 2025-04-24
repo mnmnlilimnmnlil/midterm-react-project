@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/midterm-react-project/static/css/main.6aa09aa0.css",
-    "main.js": "/midterm-react-project/static/js/main.de0e0d43.js",
+    "main.js": "/midterm-react-project/static/js/main.490b0bea.js",
     "static/js/453.2a0c951e.chunk.js": "/midterm-react-project/static/js/453.2a0c951e.chunk.js",
     "static/media/home-bg.png": "/midterm-react-project/static/media/home-bg.4b7386171427cfea89f2.png",
     "index.html": "/midterm-react-project/index.html",
     "main.6aa09aa0.css.map": "/midterm-react-project/static/css/main.6aa09aa0.css.map",
-    "main.de0e0d43.js.map": "/midterm-react-project/static/js/main.de0e0d43.js.map",
+    "main.490b0bea.js.map": "/midterm-react-project/static/js/main.490b0bea.js.map",
     "453.2a0c951e.chunk.js.map": "/midterm-react-project/static/js/453.2a0c951e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6aa09aa0.css",
-    "static/js/main.de0e0d43.js"
+    "static/js/main.490b0bea.js"
   ]
 }
